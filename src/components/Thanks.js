@@ -1,4 +1,4 @@
-const Thanks = () => {
+const Thanks = ({ rating }) => {
   return (
     <div>
       <div>
@@ -96,7 +96,7 @@ const Thanks = () => {
           </g>
         </svg>
         <div>
-          <p>You selected 4 out of 5</p>
+          <p>You selected {rating} out of 5</p>
         </div>
         <div>
           <h2>Thank you!</h2>

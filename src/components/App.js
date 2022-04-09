@@ -9,8 +9,10 @@ function App() {
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen min-w-screen bg-darker-blue p-6">
-      {!submitted && <Rate setSubmitted={setSubmitted} />}
-      {submitted && <Thanks setRating={setRating} />}
+      {!submitted && (
+        <Rate setSubmitted={setSubmitted} setRating={setRating} />
+      )}
+      {submitted && <Thanks rating={rating} />}
       <footer className="absolute bottom-0 left-0 w-full text-center p-2 text-sm bg-bright-orange">
         <div>
           Challenge by{' '}
