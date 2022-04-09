@@ -1,36 +1,49 @@
+import starSvg from '../images/icon-star.svg';
 const Rate = () => {
   return (
     // Svg
-    <div>
-      <div className="">
-        <svg
-          width="17"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-            fill="#FC7614"
-          />
-        </svg>
+    <div className="bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-8 rounded-3xl">
+      <div className="bg-dark-blue w-fit p-3 rounded-full mb-8">
+        <img className="w-4" src={starSvg} alt="star" />
       </div>
       {/* Text Content */}
-      <div>
-        <h1>How did we do?</h1>
-        <p>
+      <div className="mb-6">
+        <h1 className="text-pure-white text-3xl font-bold leading-6 mb-4">
+          How did we do?
+        </h1>
+        <p className="text-light-grey text-md leading-6">
           Please let us know how we did with your support request. All
-          feedback is appreciated to help us improve our offering
+          feedback is appreciated to help us improve our offering!
         </p>
       </div>
       {/* Rating Form */}
       <div>
-        <form>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <button type></button>
+        <form className="flex flex-col">
+          <div className="flex justify-between items-center text-light-grey mb-6">
+            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
+              1
+            </div>
+            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
+              <span>2</span>
+            </div>
+            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
+              3
+            </div>
+            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
+              4
+            </div>
+            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
+              5
+            </div>
+          </div>
+          <div>
+            <button
+              className="text-pure-white w-full bg-bright-orange rounded-full py-4 uppercase tracking-wider hover:text-bright-orange hover:bg-pure-white"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
