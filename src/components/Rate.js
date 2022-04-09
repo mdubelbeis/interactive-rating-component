@@ -1,5 +1,9 @@
 const Rate = () => {
-  return <div>Rate</div>;
+  return (
+    <div>
+      <h1 className="text-6xl">Rate</h1>
+    </div>
+  );
 };
 
 export default Rate;
