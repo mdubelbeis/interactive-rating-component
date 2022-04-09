@@ -2,7 +2,7 @@ import starSvg from '../images/icon-star.svg';
 const Rate = () => {
   return (
     // Svg
-    <div className="bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-8 rounded-3xl">
+    <div className="flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-6 rounded-3xl min-h-min max-w-screen-sm object-contain">
       <div className="bg-dark-blue w-fit p-3 rounded-full mb-8">
         <img className="w-4" src={starSvg} alt="star" />
       </div>
@@ -19,26 +19,16 @@ const Rate = () => {
       {/* Rating Form */}
       <div>
         <form className="flex flex-col">
-          <div className="flex justify-between items-center text-light-grey mb-6">
-            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
-              1
-            </div>
-            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
-              <span>2</span>
-            </div>
-            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
-              3
-            </div>
-            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
-              4
-            </div>
-            <div className="bg-dark-blue rounded-full py-4 px-6 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer">
-              5
-            </div>
+          <div className="flex justify-between text-light-grey mb-6">
+            <span className="rating-btns">1</span>
+            <span className="rating-btns">2</span>
+            <span className="rating-btns">3</span>
+            <span className="rating-btns">4</span>
+            <span className="rating-btns">5</span>
           </div>
           <div>
             <button
-              className="text-pure-white w-full bg-bright-orange rounded-full py-4 uppercase tracking-wider hover:text-bright-orange hover:bg-pure-white"
+              className="w-full text-pure-white bg-bright-orange rounded-full h-12 uppercase tracking-wider hover:text-bright-orange hover:bg-pure-white"
               type="submit"
             >
               Submit
