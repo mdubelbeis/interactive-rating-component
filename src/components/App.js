@@ -8,7 +8,7 @@ function App() {
   const [rating, setRating] = useState(null);
 
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen">
+    <div className="relative flex flex-col justify-center items-center h-screen bg-darker-blue">
       {!submitted && <Rate />}
       {submitted && <Thanks />}
       <footer className="absolute bottom-0 left-0 w-full text-center p-6 bg-bright-orange">
