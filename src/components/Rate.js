@@ -1,5 +1,13 @@
 import starSvg from '../images/icon-star.svg';
-const Rate = () => {
+const Rate = ({ setSubmitted, setRating }) => {
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    setSubmitted(true);
+  };
+
+  const onRatingSelect = (e) => {};
+
   return (
     // Svg
     <div className="flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-6 rounded-3xl min-h-min max-w-screen-sm object-contain">
@@ -18,7 +26,10 @@ const Rate = () => {
       </div>
       {/* Rating Form */}
       <div>
-        <form className="flex flex-col">
+        <form
+          className="flex flex-col"
+          onSubmit={(e) => onFormSubmit(e)}
+        >
           <div className="flex justify-between text-light-grey mb-6">
             <span className="rating-btns">1</span>
             <span className="rating-btns">2</span>
