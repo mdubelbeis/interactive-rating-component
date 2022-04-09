@@ -11,9 +11,9 @@ function App() {
     <div className="relative flex flex-col justify-center items-center min-h-screen min-w-screen bg-darker-blue p-6">
       {!submitted && <Rate />}
       {submitted && <Thanks />}
-      <footer className="absolute bottom-0 left-0 w-full text-center p-6 bg-bright-orange">
+      <footer className="absolute bottom-0 left-0 w-full text-center p-2 text-sm bg-bright-orange">
         <div>
-          Challenge by
+          Challenge by{' '}
           <a
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank"
