@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Rating Component]('./src/images/Screen Shot 2022-04-09 at 10.09.06 PM.png')
-![Thankyou Component]('./src/images/Screen Shot 2022-04-09 at 10.09.31 PM.png')
+![Rating Component](./src/images/Screen Shot 2022-04-09 at 10.09.06 PM.png)
+![Thankyou Component](./src/images/Screen Shot 2022-04-09 at 10.09.31 PM.png)
 
 ### Links
 
