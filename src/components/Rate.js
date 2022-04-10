@@ -13,7 +13,7 @@ const Rate = ({ setSubmitted, setRating }) => {
 
   return (
     // Svg
-    <div className="flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end px-4 py-8 rounded-3xl w-auto sm:w-96">
+    <div className="card">
       <div className="bg-dark-blue w-fit p-3 rounded-full mb-8">
         <img className="w-4" src={starSvg} alt="star" />
       </div>

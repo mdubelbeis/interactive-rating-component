@@ -2,7 +2,7 @@ import thanksSvg from '../images/illustration-thank-you.svg';
 
 const Thanks = ({ rating }) => {
   return (
-    <div className="flex flex-col items-center bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-8 rounded-3xl w-80 sm:w-96 space-y-4">
+    <div className="card items-center space-y-4">
       <div className="w-fit mb-4">
         <img src={thanksSvg} alt="thank you" />
       </div>

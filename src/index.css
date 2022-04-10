@@ -7,3 +7,7 @@
 .rating-btns {
   @apply bg-dark-blue rounded-full py-2 px-4 sm:py-3 sm:px-5 hover:text-pure-white hover:bg-bright-orange hover:cursor-pointer;
 }
+
+.card {
+  @apply flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end px-4 py-8 md:px-8 md:py-10 rounded-3xl md:max-w-md;
+}
