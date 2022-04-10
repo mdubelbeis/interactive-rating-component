@@ -13,7 +13,7 @@ const Rate = ({ setSubmitted, setRating }) => {
 
   return (
     // Svg
-    <div className="flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end p-8 rounded-3xl w-80 sm:w-96">
+    <div className="flex flex-col bg-gradient-to-br from-gradient-black-start to-gradient-black-end px-4 py-8 rounded-3xl w-auto sm:w-96">
       <div className="bg-dark-blue w-fit p-3 rounded-full mb-8">
         <img className="w-4" src={starSvg} alt="star" />
       </div>
@@ -36,34 +36,34 @@ const Rate = ({ setSubmitted, setRating }) => {
           <div className="flex justify-between text-light-grey mb-6">
             <span
               value={selection}
-              onClick={(e) => setSelection(1)}
+              onClick={() => setSelection(1)}
               className="rating-btns"
             >
               1
             </span>
             <span
-              onClick={(e) => setSelection(2)}
+              onClick={() => setSelection(2)}
               value={selection}
               className="rating-btns"
             >
               2
             </span>
             <span
-              onClick={(e) => setSelection(3)}
+              onClick={() => setSelection(3)}
               value={selection}
               className="rating-btns"
             >
               3
             </span>
             <span
-              onClick={(e) => setSelection(4)}
+              onClick={() => setSelection(4)}
               value={selection}
               className="rating-btns"
             >
               4
             </span>
             <span
-              onClick={(e) => setSelection(5)}
+              onClick={() => setSelection(5)}
               value={selection}
               className="rating-btns"
             >
