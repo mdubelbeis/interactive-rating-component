@@ -8,7 +8,7 @@ function App() {
   const [rating, setRating] = useState(null);
 
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen min-w-screen bg-darker-blue p-6">
+    <main className="relative flex flex-col justify-center items-center min-h-screen min-w-screen bg-darker-blue p-6">
       {!submitted && (
         <Rate setSubmitted={setSubmitted} setRating={setRating} />
       )}
@@ -35,7 +35,7 @@ function App() {
           .
         </div>
       </footer>
-    </div>
+    </main>
   );
 }
 
