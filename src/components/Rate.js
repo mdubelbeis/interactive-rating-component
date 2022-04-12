@@ -17,8 +17,6 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
     setBackground('bg-light-grey');
   };
 
-  useEffect(() => {}, [background]);
-
   return (
     // Svg
     <div className="card">
