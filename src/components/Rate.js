@@ -1,15 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import starSvg from '../images/icon-star.svg';
-const Rate = ({ setSubmitted, setRating }) => {
-  const [selection, setSelection] = useState(null);
+const Rate = ({ setSubmitted, setRating, rating }) => {
+  const [selection, setSelection] = useState(0);
+  const [background, setBackground] = useState('');
 
   const onFormSubmit = (e) => {
     e.preventDefault();
 
-    setRating(selection);
     setSubmitted(true);
+    setRating(selection);
   };
+
+  const onClickRating = (num) => {
+    setSelection(num);
+    setBackground('bg-light-grey');
+  };
+
+  useEffect(() => {}, [background]);
 
   return (
     // Svg
@@ -34,41 +42,71 @@ const Rate = ({ setSubmitted, setRating }) => {
           onSubmit={(e) => onFormSubmit(e)}
         >
           <div className="flex justify-between text-light-grey mb-6">
-            <span
+            <div
               value={selection}
-              onClick={() => setSelection(1)}
-              className="rating-btns"
+              onClick={() => onClickRating(1)}
+              className={`rating-btns ${
+                selection === 1 ? background : 'bg-dark-blue'
+              } ${
+                selection === 1
+                  ? 'text-pure-white'
+                  : 'text-light-grey'
+              }`}
             >
               1
-            </span>
-            <span
-              onClick={() => setSelection(2)}
+            </div>
+            <div
+              onClick={() => onClickRating(2)}
               value={selection}
-              className="rating-btns"
+              className={`rating-btns ${
+                selection === 2 ? background : 'bg-dark-blue'
+              } ${
+                selection === 2
+                  ? 'text-pure-white'
+                  : 'text-light-grey'
+              }`}
             >
               2
-            </span>
-            <span
-              onClick={() => setSelection(3)}
+            </div>
+            <div
+              onClick={() => onClickRating(3)}
               value={selection}
-              className="rating-btns"
+              className={`rating-btns ${
+                selection === 3 ? background : 'bg-dark-blue'
+              } ${
+                selection === 3
+                  ? 'text-pure-white'
+                  : 'text-light-grey'
+              }`}
             >
               3
-            </span>
-            <span
-              onClick={() => setSelection(4)}
+            </div>
+            <div
+              onClick={() => onClickRating(4)}
               value={selection}
-              className="rating-btns"
+              className={`rating-btns ${
+                selection === 4 ? background : 'bg-dark-blue'
+              } ${
+                selection === 4
+                  ? 'text-pure-white'
+                  : 'text-light-grey'
+              }`}
             >
               4
-            </span>
-            <span
-              onClick={() => setSelection(5)}
+            </div>
+            <div
+              onClick={() => onClickRating(5)}
               value={selection}
-              className="rating-btns"
+              className={`rating-btns ${
+                selection === 5 ? background : 'bg-dark-blue'
+              } ${
+                selection === 5
+                  ? 'text-pure-white'
+                  : 'text-light-grey'
+              }`}
             >
               5
-            </span>
+            </div>
           </div>
           <div>
             <button
