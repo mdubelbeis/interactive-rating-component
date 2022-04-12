@@ -42,7 +42,7 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
           onSubmit={(e) => onFormSubmit(e)}
         >
           <div className="flex justify-between text-light-grey mb-6">
-            <div
+            <span
               value={selection}
               onClick={() => onClickRating(1)}
               className={`rating-btns ${
@@ -54,8 +54,8 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               1
-            </div>
-            <div
+            </span>
+            <span
               onClick={() => onClickRating(2)}
               value={selection}
               className={`rating-btns ${
@@ -67,8 +67,8 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               2
-            </div>
-            <div
+            </span>
+            <span
               onClick={() => onClickRating(3)}
               value={selection}
               className={`rating-btns ${
@@ -80,8 +80,8 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               3
-            </div>
-            <div
+            </span>
+            <span
               onClick={() => onClickRating(4)}
               value={selection}
               className={`rating-btns ${
@@ -93,8 +93,8 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               4
-            </div>
-            <div
+            </span>
+            <span
               onClick={() => onClickRating(5)}
               value={selection}
               className={`rating-btns ${
@@ -106,7 +106,7 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               5
-            </div>
+            </span>
           </div>
           <div>
             <button
