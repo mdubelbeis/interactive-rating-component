@@ -42,8 +42,7 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
           onSubmit={(e) => onFormSubmit(e)}
         >
           <div className="flex justify-between text-light-grey mb-6">
-            <span
-              value={selection}
+            <div
               onClick={() => onClickRating(1)}
               className={`rating-btns ${
                 selection === 1 ? background : 'bg-dark-blue'
@@ -54,10 +53,9 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               1
-            </span>
-            <span
+            </div>
+            <div
               onClick={() => onClickRating(2)}
-              value={selection}
               className={`rating-btns ${
                 selection === 2 ? background : 'bg-dark-blue'
               } ${
@@ -67,10 +65,9 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               2
-            </span>
-            <span
+            </div>
+            <div
               onClick={() => onClickRating(3)}
-              value={selection}
               className={`rating-btns ${
                 selection === 3 ? background : 'bg-dark-blue'
               } ${
@@ -80,10 +77,9 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               3
-            </span>
-            <span
+            </div>
+            <div
               onClick={() => onClickRating(4)}
-              value={selection}
               className={`rating-btns ${
                 selection === 4 ? background : 'bg-dark-blue'
               } ${
@@ -93,10 +89,9 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               4
-            </span>
-            <span
+            </div>
+            <div
               onClick={() => onClickRating(5)}
-              value={selection}
               className={`rating-btns ${
                 selection === 5 ? background : 'bg-dark-blue'
               } ${
@@ -106,7 +101,7 @@ const Rate = ({ setSubmitted, setRating, rating }) => {
               }`}
             >
               5
-            </span>
+            </div>
           </div>
           <div>
             <button
